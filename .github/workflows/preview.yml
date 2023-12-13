@@ -5,7 +5,8 @@ env:
     VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
 on:
-    pull_request:
+    push:
+        branches:
 
 permissions:
     contents: write
@@ -17,7 +18,7 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Deploy to Preview
-              uses: amondnet/vercel-action@v25
+              uses: amondnet/vercel-action@v25.1.1
               id: deploy-vercel-preview
               with:
                   vercel-token: ${{ secrets.VERCEL_TOKEN }}
