@@ -13,11 +13,11 @@ const theme: ThemeOptions = createTheme({
 	},
 	palette: {
 		background: {
-			default: "#ff00ff",
+			default: "#fff",
 		},
 		mode: "light",
 		primary: {
-			main: "#FFF",
+			main: "#ff00ff",
 		},
 		secondary: {
 			main: "#f6be5c",
