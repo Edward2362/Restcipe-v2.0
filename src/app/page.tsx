@@ -9,9 +9,7 @@ export default function Home() {
 
 	return (
 		<Box sx={{ height: "100vh", width: "100vw", bgcolor: "white" }}>
-			<Button variant="contained" onClick={handleClick}>
-				Test
-			</Button>
+			<Button variant="contained">Test</Button>
 		</Box>
 	);
 }
