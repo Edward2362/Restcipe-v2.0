@@ -1,5 +1,11 @@
-import { Roboto } from "next/font/google";
+import { Grandiflora_One, Roboto } from "next/font/google";
 import { createTheme, ThemeOptions } from "@mui/material/styles";
+
+const grandifloraOne = Grandiflora_One({
+	weight: ["400"],
+	subsets: ["latin"],
+	display: "swap",
+});
 
 const roboto = Roboto({
 	weight: ["300", "400", "500", "700"],
@@ -10,18 +16,21 @@ const roboto = Roboto({
 const theme: ThemeOptions = createTheme({
 	typography: {
 		fontFamily: roboto.style.fontFamily,
+		h1: { fontFamily: grandifloraOne.style.fontFamily },
 	},
 	palette: {
-		background: {
-			default: "#fff",
-		},
 		mode: "light",
 		primary: {
-			main: "#ff00ff",
+			main: "#9d0208",
 		},
 		secondary: {
-			main: "#f6be5c",
+			main: "#FFBA08",
+			contrastText: "#370617",
 		},
+		text: {
+			primary: "#370617",
+		},
+		divider: "#370617",
 	},
 });
 

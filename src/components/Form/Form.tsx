@@ -61,7 +61,6 @@ const Form = () => {
 				name="name"
 				control={control}
 				label="Full name"
-				variant="outlined"
 				fullWidth
 				size="small"
 			/>
@@ -70,7 +69,6 @@ const Form = () => {
 				name="email"
 				control={control}
 				label="Email"
-				variant="outlined"
 				fullWidth
 				size="small"
 			/>
@@ -79,7 +77,6 @@ const Form = () => {
 				name="password"
 				control={control}
 				label="Password"
-				variant="outlined"
 				fullWidth
 				size="small"
 			/>
@@ -89,7 +86,6 @@ const Form = () => {
 				name="retypePassword"
 				control={control}
 				label="Retype Password"
-				variant="outlined"
 				fullWidth
 				size="small"
 			/>
