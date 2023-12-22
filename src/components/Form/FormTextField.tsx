@@ -1,4 +1,3 @@
-"use client";
 import { TextField, TextFieldProps } from "@mui/material";
 import React from "react";
 import { Controller, Control } from "react-hook-form";
