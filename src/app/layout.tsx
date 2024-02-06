@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ThemeRegistry from "@/components/ThemeRegistry";
-import Header from "@/components/Page/Header";
+import Header from "@/components/Page/Header/Header";
 
 export const metadata: Metadata = {
 	title: "Restcipe",
