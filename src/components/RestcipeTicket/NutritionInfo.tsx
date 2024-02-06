@@ -2,13 +2,12 @@ import { Box, Typography } from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
 import React from "react";
 
-interface Props {
+const NutritionInfo = (props: {
 	bulletColor: string;
 	nutritionName: string;
 	fact: number;
-}
-
-const NutritionInfo = ({ bulletColor, nutritionName, fact }: Props) => {
+}) => {
+	const { bulletColor, nutritionName, fact } = props;
 	return (
 		<Box
 			sx={{
