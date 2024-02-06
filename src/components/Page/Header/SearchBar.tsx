@@ -16,6 +16,7 @@ const SearchBar = () => {
 				borderRadius: 100,
 				px: "1rem",
 				alignSelf: "stretch",
+				backgroundColor: "#FBFBFB",
 			}}
 		>
 			<Box
