@@ -102,6 +102,10 @@ const RecipeTicket = (props: {
 						fontFamily: grandifloraOne.style.fontFamily,
 						fontSize: "1em",
 						wordWrap: "breal-all",
+						textOverflow: "ellipsis",
+						overflow: "hidden",
+						width: 1,
+						textAlign: "center",
 					}}
 				>
 					{recipeName}
