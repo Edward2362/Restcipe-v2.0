@@ -25,10 +25,17 @@ export default function Home() {
 						flexDirection: "column",
 					}}
 				>
-					<Typography fontSize={"1.5rem"} fontWeight={400}>
+					<Typography
+						fontSize={{ lg: "1.5rem", xl: "2rem" }}
+						fontWeight={400}
+					>
 						Open the fridge and
 					</Typography>
-					<Typography variant="h1" color="primary">
+					<Typography
+						variant="h1"
+						color="primary"
+						fontSize={{ xl: "12rem" }}
+					>
 						Restcipe
 					</Typography>
 				</Box>
@@ -40,7 +47,7 @@ export default function Home() {
 						alignItems: "center",
 						position: "relative",
 					}}
-					fontSize={"2rem"}
+					fontSize={{ md: "1.5rem", lg: "2rem", xl: "3rem" }}
 				>
 					<RecipeTicket
 						sx={{ zIndex: 1 }}
@@ -56,10 +63,10 @@ export default function Home() {
 							justifyContent: "center",
 							alignItems: "center",
 							position: "absolute",
-							right: 50,
+							right: { md: "1.7em", lg: "2em", xl: "3em" },
 							zIndex: 0,
 						}}
-						fontSize={"1.5rem"}
+						fontSize={{ md: "1rem", lg: "1.5rem", xl: "2.5rem" }}
 					>
 						<RecipeTicket
 							sx={{
@@ -84,10 +91,10 @@ export default function Home() {
 							justifyContent: "center",
 							alignItems: "center",
 							position: "absolute",
-							left: 50,
+							left: { md: "1.7em", lg: "2em", xl: "3em" },
 							zIndex: 0,
 						}}
-						fontSize={"1.5rem"}
+						fontSize={{ md: "1rem", lg: "1.5rem", xl: "2.5rem" }}
 					>
 						<RecipeTicket
 							sx={{

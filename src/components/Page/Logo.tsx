@@ -9,7 +9,12 @@ const Logo = () => {
 			alt="Restcipe Logo"
 			width={0}
 			height={0}
-			style={{ width: "10%", height: "auto", minWidth: "150px" }}
+			style={{
+				width: "15%",
+				height: "auto",
+				minWidth: "100px",
+				maxWidth: "200px",
+			}}
 		/>
 	);
 };

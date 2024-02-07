@@ -24,6 +24,7 @@ const ElevationScroll = (props: { children: React.ReactElement }) => {
 				position: "fixed",
 				top: 0,
 				right: 0,
+				left: 0,
 				borderRadius: 100,
 				backgroundColor: trigger ? "#FBFBFB" : "transparent",
 				transition: "all 0.2s ease-in-out 0.1s",
