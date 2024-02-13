@@ -7,6 +7,9 @@ import { Box, Typography } from "@mui/material";
 import { useEffect } from "react";
 import Section from "@/components/Page/Home/Section";
 import RecipeTicket from "@/components/RestcipeTicket/RecipeTicket";
+import Instructions from "@/components/Page/Home/Instructions";
+import Illustrations from "@/components/Page/Home/Illustrations";
+import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 
 export default function Home() {
 	useEffect(() => {
@@ -16,7 +19,47 @@ export default function Home() {
 
 	return (
 		<Box component="main" sx={{ width: 1 }}>
-			<Section overlay={true} sx={{ display: "flex" }}>
+			{/* Section 1 */}
+			<Section
+				overlay={true}
+				sx={{ display: "flex" }}
+				decorations={[
+					<Image
+						key={"deco-1"}
+						src="/onion.png"
+						alt="Onion"
+						width={0}
+						height={0}
+						unoptimized
+						style={{
+							position: "absolute",
+							width: "20%",
+							height: "auto",
+							zIndex: 1,
+							bottom: 0,
+							left: 0,
+							transform: "translate(-45%, 45%)",
+						}}
+					/>,
+					<Image
+						key={"deco-2"}
+						src="/broccoli.png"
+						alt="Onion"
+						width={0}
+						height={0}
+						unoptimized
+						style={{
+							position: "absolute",
+							width: "20%",
+							height: "auto",
+							zIndex: 1,
+							bottom: 0,
+							right: 0,
+							transform: "translate(45%, 45%)",
+						}}
+					/>,
+				]}
+			>
 				<Box
 					sx={{
 						flex: 0.5,
@@ -58,7 +101,6 @@ export default function Home() {
 					/>
 					<Box
 						sx={{
-							flex: 0.5,
 							display: "flex",
 							justifyContent: "center",
 							alignItems: "center",
@@ -86,7 +128,6 @@ export default function Home() {
 					</Box>
 					<Box
 						sx={{
-							flex: 0.5,
 							display: "flex",
 							justifyContent: "center",
 							alignItems: "center",
@@ -114,9 +155,53 @@ export default function Home() {
 					</Box>
 				</Box>
 			</Section>
-			<Section>
-				<Box>sth</Box>
+			{/* Section 2 */}
+			<Section
+				sx={{
+					position: "relative",
+					display: "flex",
+					width: 1,
+					flexDirection: "column",
+					fontSize: { md: "1rem", lg: "1.5rem", xl: "2.5rem" },
+				}}
+				decorations={
+					<KeyboardArrowRightRoundedIcon
+						color="secondary"
+						sx={{
+							position: "absolute",
+							bottom: 0,
+							right: 0,
+							left: 0,
+							top: 0,
+							zIndex: 1,
+							fontSize: "5em",
+							margin: "auto",
+						}}
+					/>
+				}
+			>
+				<Illustrations
+					images={[
+						{ src: "/LeftSection2.png", height: "11em" },
+						{ src: "/RightSection2.png", height: "9em" },
+					]}
+				/>
+				<Instructions
+					instructions={[
+						{
+							title: "Look in the Fridge",
+							content:
+								"Wondering how many dishes that can be cooked with these simple ingredients?",
+						},
+						{
+							title: "Go to Restcipe",
+							content:
+								"Discover dishes with detail guidance and nutrition information",
+						},
+					]}
+				/>
 			</Section>
+			{/* Section 2 */}
 		</Box>
 	);
 }

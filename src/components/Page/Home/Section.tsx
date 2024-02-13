@@ -7,8 +7,15 @@ const Section = (props: {
 	overlay?: boolean;
 	fill?: boolean;
 	sx?: SxProps;
+	decorations?: React.ReactElement | React.ReactElement[];
 }) => {
-	const { children, overlay = false, fill = true, sx = {} } = props;
+	const {
+		children,
+		overlay = false,
+		fill = true,
+		sx = {},
+		decorations = [],
+	} = props;
 
 	return (
 		<Box
@@ -27,6 +34,7 @@ const Section = (props: {
 				},
 			]}
 		>
+			{decorations}
 			<Box
 				sx={{
 					width: 1,
