@@ -201,7 +201,7 @@ export default function Home() {
 					]}
 				/>
 			</Section>
-			{/* Section 2 */}
+			{/* Section 3 */}
 		</Box>
 	);
 }
