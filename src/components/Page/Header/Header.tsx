@@ -1,9 +1,9 @@
 import { Box, Button, ButtonGroup } from "@mui/material";
 import React from "react";
-import Logo from "../Logo";
 import SearchBar from "./SearchBar";
 import ElevationScroll from "./ElevationScroll";
 import Nav from "./Nav";
+import Logo from "../Logo";
 
 const Header = () => {
 	return (
