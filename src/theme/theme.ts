@@ -5,6 +5,7 @@ export const grandifloraOne = Grandiflora_One({
 	weight: ["400"],
 	subsets: ["latin"],
 	display: "swap",
+	adjustFontFallback: false,
 });
 
 export const roboto = Roboto({
