@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import ThemeRegistry from "@/components/ThemeRegistry";
 import Header from "@/components/Page/Header/Header";
 import Footer from "@/components/Page/Footer/Footer";
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 	description: "Restcipe homepage",
 };
 
-export default function RootLayout({
+export default function RootAuthLayout({
 	children,
 }: {
 	children: React.ReactNode;
@@ -18,7 +18,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body>
 				<ThemeRegistry>
-					<Header />
+					{/* <Header /> */}
 					{children}
 					<Footer />
 				</ThemeRegistry>

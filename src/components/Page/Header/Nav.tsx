@@ -31,7 +31,7 @@ const Nav = () => {
 				size={matchesXL ? "large" : "small"}
 				sx={{ borderRadius: 100, marginLeft: "0.25rem" }}
 			>
-				<Button href="#" sx={{ px: "1.5em", borderRadius: 100 }}>
+				<Button href="/login" sx={{ px: "1.5em", borderRadius: 100 }}>
 					sign in
 				</Button>
 				<Button href="#" sx={{ px: "1.5em", borderRadius: 100 }}>

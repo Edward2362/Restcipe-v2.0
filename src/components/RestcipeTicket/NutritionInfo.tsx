@@ -31,10 +31,7 @@ const NutritionInfo = (props: {
 					{nutritionName}
 				</Typography>
 			</Box>
-			<Typography sx={{ fontSize: "0.5em" }}>
-				{fact}
-				{" g"}
-			</Typography>
+			<Typography sx={{ fontSize: "0.5em" }}>{`${fact} g`}</Typography>
 		</Box>
 	);
 };
