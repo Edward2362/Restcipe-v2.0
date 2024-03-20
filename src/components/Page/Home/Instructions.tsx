@@ -1,4 +1,4 @@
-import { grandifloraOne } from "@/theme/theme";
+import { grandifloraOne } from "@/theme/font";
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 

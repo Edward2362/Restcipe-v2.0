@@ -2,7 +2,6 @@
 
 import { Box, Button, ButtonGroup, Theme } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import React from "react";
 
 const Nav = () => {
 	const matchesXL = useMediaQuery((theme: Theme) =>

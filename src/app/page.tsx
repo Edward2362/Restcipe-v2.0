@@ -1,22 +1,13 @@
-"use client";
-
-import AOS from "aos";
 import Image from "next/image";
-import styles from "./page.module.css";
 import { Box, Typography } from "@mui/material";
-import { useEffect } from "react";
 import Section from "@/components/Page/Home/Section";
 import RecipeTicket from "@/components/RestcipeTicket/RecipeTicket";
 import Instructions from "@/components/Page/Home/Instructions";
 import Illustrations from "@/components/Page/Home/Illustrations";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
+import MagicCounter from "@/components/Page/Home/MagicCounter";
 
 export default function Home() {
-	useEffect(() => {
-		// window.scrollTo(0, 0);
-		AOS.init();
-	}, []);
-
 	return (
 		<Box component="main" sx={{ width: 1 }}>
 			{/* Section 1 */}
@@ -202,6 +193,98 @@ export default function Home() {
 				/>
 			</Section>
 			{/* Section 3 */}
+			<Section
+				sx={{
+					position: "relative",
+					display: "flex",
+					alignItems: "center",
+					justifyContent: "center",
+					width: 1,
+					flexDirection: "column",
+					fontSize: { md: "1rem", lg: "1.5rem", xl: "2.5rem" },
+				}}
+				decorations={[
+					<Image
+						key={"deco-1"}
+						src="/left-s3.png"
+						alt="Onion"
+						width={0}
+						height={0}
+						unoptimized
+						style={{
+							position: "absolute",
+							width: "30%",
+							height: "auto",
+							zIndex: 1,
+							margin: "auto 0",
+							left: 0,
+							top: 0,
+							bottom: 0,
+							transform: "translateX(-50%)",
+						}}
+					/>,
+					<Image
+						key={"deco-2"}
+						src="/left-mid-s3.png"
+						alt="Onion"
+						width={0}
+						height={0}
+						unoptimized
+						style={{
+							position: "absolute",
+							width: "20%",
+							height: "auto",
+							zIndex: 1,
+							margin: "auto 0",
+							left: 0,
+							top: 0,
+							transform: "translateX(50%)",
+						}}
+					/>,
+					<Image
+						key={"deco-3"}
+						src="/right-mid-s3.png"
+						alt="Onion"
+						width={0}
+						height={0}
+						unoptimized
+						style={{
+							position: "absolute",
+							width: "20%",
+							height: "auto",
+							zIndex: 1,
+							margin: "auto 0",
+							right: 0,
+							bottom: 0,
+							transform: "translateX(-50%)",
+						}}
+					/>,
+					<Image
+						key={"deco-4"}
+						src="/right-s3.png"
+						alt="Onion"
+						width={0}
+						height={0}
+						unoptimized
+						style={{
+							position: "absolute",
+							width: "30%",
+							height: "auto",
+							zIndex: 1,
+							margin: "auto 0",
+							right: 0,
+							top: 0,
+							bottom: 0,
+							transform: "translateX(50%)",
+						}}
+					/>,
+				]}
+			>
+				<MagicCounter />
+				<Typography sx={{ fontSize: "1em" }}>
+					Recipes and more are waiting for you
+				</Typography>
+			</Section>
 		</Box>
 	);
 }

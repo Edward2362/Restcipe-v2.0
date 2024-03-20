@@ -1,4 +1,4 @@
-import { grandifloraOne } from "@/theme/theme";
+import { grandifloraOne } from "@/theme/font";
 import { Box, Divider, SxProps, Typography } from "@mui/material";
 import Image from "next/image";
 import React from "react";

@@ -1,19 +1,5 @@
-import { Grandiflora_One, Roboto } from "next/font/google";
 import { createTheme, responsiveFontSizes, Theme } from "@mui/material/styles";
-
-export const grandifloraOne = Grandiflora_One({
-	weight: ["400"],
-	subsets: ["latin"],
-	display: "swap",
-	adjustFontFallback: false,
-});
-
-export const roboto = Roboto({
-	weight: ["300", "400", "500", "700"],
-	subsets: ["latin"],
-	display: "swap",
-	adjustFontFallback: false,
-});
+import { roboto, grandifloraOne } from "./font";
 
 let theme: Theme = createTheme({
 	typography: {
