@@ -24,6 +24,7 @@ const Footer = (props: { sx?: SxProps }) => {
 				sx={{
 					width: 1,
 					height: 1,
+					py: "3%",
 					px: "15%",
 					display: "flex",
 					flexDirection: "column",
