@@ -1,19 +1,7 @@
-import { Grandiflora_One, Roboto } from "next/font/google";
-import { createTheme, ThemeOptions } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes, Theme } from "@mui/material/styles";
+import { roboto, grandifloraOne } from "./font";
 
-const grandifloraOne = Grandiflora_One({
-	weight: ["400"],
-	subsets: ["latin"],
-	display: "swap",
-});
-
-const roboto = Roboto({
-	weight: ["300", "400", "500", "700"],
-	subsets: ["latin"],
-	display: "swap",
-});
-
-const theme: ThemeOptions = createTheme({
+let theme: Theme = createTheme({
 	typography: {
 		fontFamily: roboto.style.fontFamily,
 		h1: { fontFamily: grandifloraOne.style.fontFamily },
@@ -21,17 +9,24 @@ const theme: ThemeOptions = createTheme({
 	palette: {
 		mode: "light",
 		primary: {
-			main: "#9d0208",
-		},
-		secondary: {
 			main: "#FFBA08",
 			contrastText: "#370617",
+		},
+		secondary: {
+			main: "#9D0208",
+			contrastText: "#FBFBFB",
 		},
 		text: {
 			primary: "#370617",
 		},
-		divider: "#370617",
+		background: {
+			paper: "#FBFBFB",
+			default: "#FBFBFB",
+		},
+		divider: "#9D0208",
 	},
 });
+
+theme = responsiveFontSizes(theme);
 
 export default theme;
