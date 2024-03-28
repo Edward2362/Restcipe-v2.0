@@ -107,7 +107,6 @@ const RegisterForm = (props: { sx?: SxProps }) => {
 				type="submit"
 				fullWidth
 				variant="contained"
-				size="large"
 				sx={{ mt: "1rem" }}
 			>
 				SIGN UP
