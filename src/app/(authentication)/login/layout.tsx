@@ -23,11 +23,11 @@ export default function LoginLayout({
 					<Typography
 						textAlign={"center"}
 						fontWeight={"700"}
-						fontSize={"2em"}
+						fontSize={"1.5em"}
 					>
 						Welcome back!
 					</Typography>
-					<Typography textAlign={"center"} fontSize={"1.5em"}>
+					<Typography textAlign={"center"} fontSize={"1.2em"}>
 						Let&apos;s whip up some delicious dishes together!
 					</Typography>
 				</Box>

@@ -23,11 +23,11 @@ export default function LoginLayout({
 					<Typography
 						textAlign={"center"}
 						fontWeight={"700"}
-						fontSize={"2em"}
+						fontSize={"1.5em"}
 					>
 						Welcome to Restcipe!
 					</Typography>
-					<Typography textAlign={"center"} fontSize={"1.5em"}>
+					<Typography textAlign={"center"} fontSize={"1.2em"}>
 						Let&apos;s get you registered and cooking up some tasty
 						adventures!
 					</Typography>

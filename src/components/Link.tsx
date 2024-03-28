@@ -1,11 +1,7 @@
-import { LinkProps, Link as MLink, SxProps } from "@mui/material";
+import { LinkProps as MuiLinkProps, Link as MLink } from "@mui/material";
 import NLink from "next/link";
 
-type Props = LinkProps & {
-	sx?: SxProps;
-};
-
-export const Link = ({ sx = {}, ...restProps }: Props) => {
+export const Link = ({ sx = {}, ...restProps }: MuiLinkProps<"a">) => {
 	return (
 		<MLink
 			component={NLink}
