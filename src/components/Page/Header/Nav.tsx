@@ -34,7 +34,7 @@ const Nav = () => {
 				<Button href="/login" sx={{ px: "1.5em", borderRadius: 100 }}>
 					sign in
 				</Button>
-				<Button href="#" sx={{ px: "1.5em", borderRadius: 100 }}>
+				<Button href="/register" sx={{ px: "1.5em", borderRadius: 100 }}>
 					sign up
 				</Button>
 			</ButtonGroup>
