@@ -1,4 +1,5 @@
 import { Grandiflora_One, Roboto } from "next/font/google";
+
 export const grandifloraOne = Grandiflora_One({
 	weight: ["400"],
 	subsets: ["latin"],
